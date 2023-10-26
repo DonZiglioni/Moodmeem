@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <title>Moodmeem Generator</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Moodmeem</h1>
+        <hr><br><br>
+        <div class="outer-form">
+            <form id="meme-form">
+                <label for="img-link">Paste Image URL</label>
+                <input type="text" name="img-link" class="txtInput" placeholder="Paste image url...">
+                <label for="top-text">Top Text</label>
+                <input type="text" name="top-text" class="txtInput" placeholder="Enter top text...">
+                <label for="bottom-text">Bottom Text</label>
+                <input type="text" name="bot-text" class="txtInput" placeholder="Enter bottom text...">
+                <label for="mood">Select Mood</label>
+                <div class="buttons">
+                    <input type="radio" class="radio" name="moods" value="happy" checked="true">
+                    <label for="img-link">Happy</label><br>
+                    <input type="radio" class="radio" name="moods" value="sad">
+                    <label for="img-link">Sad</label><br>
+                    <input type="radio" class="radio" name="moods" value="angry">
+                    <label for="img-link">Angry</label><br>
+                    <input type="radio" class="radio" name="moods" value="funny">
+                    <label for="img-link">Funny</label><br>
+                    <input type="radio" class="radio" name="moods" value="halloween">
+                    <label for="img-link">Halloween</label><br>
+                </div>
+                <button type="submit" class="submit-btn">Create Moodmeem!</button>
+            </form>
+        </div><br><br>
+        <hr>
+    </div>
+    <div class="meme-section">
+        <h2>My Moodmeem Collection</h2>
+        <hr>
+        <div class="memes">
+            <div class="meme" data-mood="happy">
+                <span class="meme-text-top">Your Moodmeems...</span>
+                <span class="meme-text-bottom">Are saved Here</span>
+                <img class="meme-image" src="https://picsum.photos/200">
+                <span class="delete-meme">X</span>
+                <audio id="happy">
+                    <source src="../audio/happy.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
